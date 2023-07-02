@@ -6,12 +6,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import  java.io.*;
 
 @Entity
 @Table(name = "employees")
-public class Employee {
+public class Employee   implements Serializable {
 
+    @Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	
 	private String firstName;
 	private String lastName;
 	private String emailId;
@@ -26,8 +30,7 @@ public class Employee {
 		this.emailId = emailId;
 	}
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	
 	public long getId() {
 		return id;
 	}

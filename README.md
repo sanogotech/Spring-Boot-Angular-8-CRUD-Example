@@ -8,6 +8,10 @@ mvn spring-boot:run
 ```
 The Spring Boot Server will export API at port `8081`.
 
+##  REST API
+
+http://localhost:8080/springboot-crud-rest/api/v1/employees
+
 ## Run Angular Client
 
 
