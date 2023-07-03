@@ -2,6 +2,14 @@
 Develop a single page application(SPA) using Angular 8 as a front-end and Spring boot restful API as a backend.https://medium.com/@mehulkothari05/spring-boot-angular-8-crud-example-8aeafd47b54
 
 
+##  Angular  Prise en Main
+
+* https://angular.fr/
+
+* https://iner-dukoid.developpez.com/tutoriels/web/introduction-framework-web-angular/
+
+
+
 ## Run Spring Boot application
 ```
 mvn spring-boot:run

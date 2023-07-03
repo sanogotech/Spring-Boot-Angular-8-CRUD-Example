@@ -14,10 +14,15 @@ export class EmployeeListComponent implements OnInit {
 
   employees: Observable<Employee[]>;
 
+   //Constructeur
   constructor(private employeeService: EmployeeService,
     private router: Router) {}
 
   ngOnInit() {
+	  /* ngOnInit est une méthode du cycle de vie d'un composant Angular.
+	  Elle est appelée une fois que tous les composants du composant ont été initialisés, c'est-à-dire que tous les data-bindings sont prêts. 
+	  C'est le moment idéal pour effectuer des opérations de configuration sur le composant, comme par exemple récupérer des données à partir d'un service ou d'une API.
+	  */
     this.reloadData();
   }
 
