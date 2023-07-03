@@ -33,3 +33,13 @@ ng serve   (default port 4200)
 or
 * ng serve --port 8081
 ```
+
+##   Troubleshooting
+
+https://stackoverflow.com/questions/74726224/opensslerrorstack-error03000086digital-envelope-routinesinitialization-e
+
+opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ]
+
+```
+set NODE_OPTIONS=--openssl-legacy-provider
+```
