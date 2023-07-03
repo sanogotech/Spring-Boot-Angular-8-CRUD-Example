@@ -8,6 +8,8 @@ Develop a single page application(SPA) using Angular 8 as a front-end and Spring
 
 * https://iner-dukoid.developpez.com/tutoriels/web/introduction-framework-web-angular/
 
+* https://soat.developpez.com/tutoriels/javascript/angular-4-pas-a-pas/
+
 
 
 ## Run Spring Boot application
@@ -50,4 +52,54 @@ opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization e
 
 ```
 set NODE_OPTIONS=--openssl-legacy-provider
+
+```
+
+## Prise en main Angular
+
+* https://soat.developpez.com/tutoriels/javascript/angular-4-pas-a-pas/
+
+
+
+- comment créer un projet Angular 4 from scratch en utilisant Angular CLI
+- les bases d'une application Angular (structure du projet, module, component, template…)
+- comment communiquer entre le DOM et notre component en utilisant les quatre techniques de data binding pour avoir un début de projet fonctionnel.
+- la création de Services ;
+- la création de Pipes ;
+- l'utilisation de l'HttpClient pour les appels d'API ;
+- l'utilisation des routers afin de naviguer dans notre application.
+
+
+## Mise en Pratique
+
+- Un composant
+
+Un « component » Angular contient :
+
+- un template contenant l'interface utilisateur en HTML. Nous utiliserons le databinding afin de rendre la vue dynamique ;
+- une Class contenant le code associé à la vue, des propriétés et méthodes logiques qui seront utilisées dans la vue ;
+- des metadata nous permettant de définir la classe comme étant un composant Angular (component).
+
+```angular
+
+import { Component } from '@angular/core';
+
+@Component({
+        selector: 'soat-products',
+        templateUrl: './product.component.html'
+})
+
+export class ProductComponent {
+        pageTitle: string = "Products Page"
+
+        someFunction(){
+                //Do your stuff here
+        }
+
+}
+```
+
+
+```
+ng g component products/product-list
 ```
