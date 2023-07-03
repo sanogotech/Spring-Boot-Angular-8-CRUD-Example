@@ -11,6 +11,7 @@ Develop a single page application(SPA) using Angular 8 as a front-end and Spring
 * https://soat.developpez.com/tutoriels/javascript/angular-4-pas-a-pas/
 
 
+![Home Page Angular](https://github.com/sanogotech/Spring-Boot-Angular-8-CRUD-Example/blob/master/docs/images/homepageList.jpg)
 
 ## Run Spring Boot application
 ```
